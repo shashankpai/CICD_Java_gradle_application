@@ -5,7 +5,6 @@ pipeline{
     stages{
         stage("sonar quality check"){
             agent {
-                label "ubuntu_slave"
                 docker { 
                     image 'openjdk:11'
                 }
