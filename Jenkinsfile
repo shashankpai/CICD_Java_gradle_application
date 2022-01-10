@@ -7,6 +7,7 @@ pipeline{
             agent {
                 docker { 
                     image 'openjdk:11'
+                    args '-e SONAR_USER_HOME=/home/remote_user/Jenkins/.sonar'
                 }
             }
             steps{
